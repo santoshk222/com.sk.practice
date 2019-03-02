@@ -6,7 +6,6 @@
 	<groupId>com.sk</groupId>
 	<artifactId>HelloWorldWeb</artifactId>
 	<version>0.0.1</version>
-	<name>webappone</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot with JSP</description>
 
@@ -61,4 +60,5 @@
 		</plugins>
 	</build>
 
+	<name>SpringBootHelloWorldWeb</name>
 </project>
