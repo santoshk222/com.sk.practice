@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.sk</groupId>
-	<artifactId>HelloWorldWeb</artifactId>
+	<artifactId>baeldung_tutorial</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot with JSP</description>
@@ -43,13 +43,35 @@
 			<scope>provided</scope>
 		</dependency>
 		
+		<!-- JSTL for JSP -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		
+		<!-- Need this to compile JSP, 
+			tomcat-embed-jasper version is not working, no idea why -->
+		<dependency>
+			<groupId>org.eclipse.jdt.core.compiler</groupId>
+			<artifactId>ecj</artifactId>
+			<version>4.6.1</version>
+			<scope>provided</scope>
+		</dependency>
+		
 		<!-- Optional, test for static content, bootstrap CSS-->
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>3.3.7</version>
 		</dependency>
+		
+		<dependency> 
+    		<groupId>org.springframework.boot</groupId> 
+    		<artifactId>spring-boot-starter-thymeleaf</artifactId> 
+		</dependency>
+		
 	</dependencies>
+	
 
 	<build>
 		<plugins>
@@ -60,5 +82,5 @@
 		</plugins>
 	</build>
 
-	<name>SpringBootHelloWorldWeb</name>
+	<name>baeldung tutorials</name>
 </project>
